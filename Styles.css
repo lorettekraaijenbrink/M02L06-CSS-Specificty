@@ -1,56 +1,64 @@
 * {
-    margin-top:0px;
-   font-family: "Open Sans"; 
+    margin-top: 0px;
+    font-family: "Open Sans";
 }
 
-.container {
+main {
     display: grid;
-    padding: 20px;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 320px;
 }
-.grid-item {
+
+
+article {
+    margin: 10px 10px 10px 10px;
+    border: 2pt solid lightgrey;
+    border-radius: 10px;
+    padding: 15pt;
+    box-shadow: lightgrey 1px 1px 3px;
     display: grid;
-    grid-template-rows: 2fr 1fr;
 }
 
-.grid-item-top {
-    border: 2px solid lightgrey;
-    border-bottom: none;
-    padding: 15px;   
-    margin: 0px 10px;
-    border-radius: 10px 10px 0px 0px;
-}
-.grid-item-bottom {
-    border: 2px solid lightgrey;
-    padding: 15px;   
-    margin: 0px 10px;
-    border-radius: 0px 0px 10px 10px;
-    display:flexbox;
-   }
-
-.grid-item-top h1 {
-    margin-bottom: 0;
+article div {
+    display: flex;
+    justify-content: space-between;   
 }
 
-.grid-item-top h1 + P {
-    color: grey
+.card-title {
+    margin-bottom: 0px;
 }
 
-.grid-item .Name {
-    grid-area:n;
+.card-subtitle {
+    color: grey;   
 }
-.grid-item .text {
-    grid-area: t;
+div.card-buttons {
+    justify-content: center;
+    border-top: solid 1px lightgrey;
+    margin: 0px;
+
 }
-.approve {
-    color: rgb(78, 221, 78);
-    border: 1px solid rgb(78,211,78);
-    border-radius: 3px;
-    flex
+
+
+button {
+    background-color: white;
+    border: solid 1.5pt;
+    width: 140px;
+    padding: 10px;
+    align-self: center;
 }
-.decline {
+.green-button {
+   
+    color: limegreen;
+    border-color: limegreen;
+    border-radius: 5px 0px 0px 5px;
+    border-right: none;
+    
+}
+
+.red-button {
+    
     color: red;
-    border: 1px solid red;
-    border-radius: 3px;
-    width: 100%;
+    border-color: red;
+    border-radius: 0px 5px 5px 0px;
+    
 }
